@@ -4,9 +4,14 @@ var path = require('path')
 var fs = require('fs')
 var spawn = require('child_process').spawn
 
+if (process.argv.length !== 4) {
+  console.log('USAGE: danceparty "build_command" "/home/sww/music"')
+  process.exit(0)
+}
+
 var MUSIC_DIR = process.argv[3] || '/home/sww/music'
 var MPLAYER = 'mplayer'
-var BUILD = process.argv[2] || (console.log('param 1 must be build command') && process.exit(1))
+var BUILD = process.argv[2]
 
 var player
 
