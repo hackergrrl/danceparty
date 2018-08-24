@@ -2,7 +2,7 @@
   "name": "danceparty",
   "description": "dance party while your code compiles!",
   "author": "Stephen Whitmore <sww@eight.net>",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": {
     "url": "git://github.com/noffle/danceparty.git"
   },
@@ -16,8 +16,7 @@
     "test": "tape test/*.js",
     "lint": "standard"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "dependencies": {},
   "devDependencies": {
     "tape": "~4.6.2",
