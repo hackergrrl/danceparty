@@ -22,7 +22,9 @@ function playSong () {
     })
   var song = files[Math.floor(Math.random() * files.length)]
 
-  var m = spawn(MPLAYER, [path.join(MUSIC_DIR, song)])
+  var m = spawn(MPLAYER, [path.join(MUSIC_DIR, song)], {
+    stdio: ['pipe', 'ignore', 'ignore'],
+  })
   m.fade = function () {
     var n = 10
     var i = setInterval(function () {
